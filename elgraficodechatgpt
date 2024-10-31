@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar Números en Array</title>
+</head>
+<body>
+    <form id="numeros-form">
+        <!-- 20 campos de texto con la clase 'numero' -->
+        <div>
+            <!-- Generar los campos de texto -->
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+            <input type="text" class="numero">
+        </div>
+        
+        <!-- Botón para concatenar los números -->
+        <button type="button" onclick="concatenarNumeros()">Concatenar Números</button>
+    </form>
+
+    <script>
+        function concatenarNumeros() {
+            // Obtener todos los campos de texto con la clase 'numero'
+            const campos = document.querySelectorAll('.numero');
+            const numerosConcatenados = [];
+
+            // Recorrer cada campo y agregar su valor al array
+            campos.forEach(campo => {
+                numerosConcatenados.push(campo.value);
+            });
+
+            // Imprimir el array de números concatenados en la consola
+            console.log(numerosConcatenados);
+        }
+    </script>
+</body>
+</html>
